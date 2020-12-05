@@ -49,6 +49,7 @@ public class AppDependentMethods extends DriverScript implements ObjectLocations
 	{
 		String strStatus = null;
 		try {
+			test = extent.startTest("loginToApp");
 			strStatus+= appInd.setObject(oDriver, obj_User_UserName_Edit, userName);
 			strStatus+= appInd.setObject(oDriver, obj_Password_Edit, password);
 			strStatus+= appInd.clickObject(oDriver, obj_Login_Btn);
@@ -101,6 +102,7 @@ public class AppDependentMethods extends DriverScript implements ObjectLocations
 	{
 		String strStatus = null;
 		try {
+			test = extent.startTest("logoutFromApp");
 			strStatus+= appInd.clickObject(oDriver, obj_Logout_Btn);
 			Thread.sleep(2000);
 			
