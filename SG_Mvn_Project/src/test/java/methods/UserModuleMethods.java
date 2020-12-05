@@ -22,6 +22,7 @@ public class UserModuleMethods extends DriverScript implements ObjectLocations{
 	{
 		String strStatus = null;
 		try {
+			test = extent.startTest("createUser");
 			strStatus+= appInd.clickObject(oDriver, obj_Users_Menu);
 			Thread.sleep(2000);
 			
@@ -71,6 +72,7 @@ public class UserModuleMethods extends DriverScript implements ObjectLocations{
 	{
 		String strStatus = null;
 		try {
+			test = extent.startTest("deleteUser");
 			strStatus+= appInd.clickObject(oDriver, By.xpath("//div[@class='name']/span[text()="+"'"+userToDelete+"'"+"]"));
 			Thread.sleep(2000);
 			

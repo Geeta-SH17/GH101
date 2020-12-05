@@ -97,6 +97,7 @@ public class AppIndependentMethods extends DriverScript{
 	{
 		WebDriver oDriver = null;
 		try {
+			test = extent.startTest("launchApp");
 			switch(browserName.toLowerCase())
 			{
 				case "chrome":
