@@ -11,6 +11,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import methods.AppDependentMethods;
 import methods.AppIndependentMethods;
 import methods.Datatable;
+import methods.TaskModuleMethods;
 import methods.UserModuleMethods;
 import reports.ReportsUtils;
 
@@ -21,6 +22,7 @@ public class DriverScript {
 	public static Datatable datatable = null;
 	public static ReportsUtils reports = null;
 	public static UserModuleMethods userMethods = null;
+	public static TaskModuleMethods taskMethods = null;
 	public static ExtentReports extent = null;
 	public static ExtentTest test = null;
 	public static String strResultLocation = null;
@@ -39,6 +41,7 @@ public class DriverScript {
 			datatable = new Datatable();
 			reports = new ReportsUtils();
 			userMethods = new UserModuleMethods();
+			taskMethods = new TaskModuleMethods();
 			strController = System.getProperty("user.dir")+"\\ExecutionController\\Controller.xlsx";
 		}catch(Exception e)
 		{

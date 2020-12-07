@@ -21,4 +21,19 @@ public interface ObjectLocations {
 	String obj_DeleteUser_Btn = "//button[contains(text(), 'Delete User')]";
 	String obj_LoginHeader = "//td[@id='headerContainer']";
 	String obj_LoginImage = "//img[contains(@src, '/timer.png')]";
+	
+	String obj_Tasks_Menu = "//div[text()='TASKS']";
+	String obj_AddNewTask_btn = "//div[text()='Add New Task']";
+	String obj_CreatNewTask_Btn = "//div[contains(text(),'Create new tasks')]";
+	String obj_EnterTaskName_Edit = "//body[1]/div[8]/div[1]/div[1]/div[1]/div[3]/table[1]/tbody[1]/tr[1]/td[1]/input[1]";
+	String obj_ClickTaskDesc_Btn = "//a[@title='Click to enter task description']";
+	String obj_EnterTaskDesc_Edit = "//textarea[@id='editDescriptionPopupText']";
+	String obj_save_btn = "//input[@id='scbutton']";
+	String obj_CheckBox = "//tbody/tr[1]/td[5]/div[1]/input[1]";
+	String obj_CreateTask_Btn = "//span[contains(text(),'Create Tasks')]";
+	
+	String obj_Action_Btn = "//body/div[@id='taskManagementPage']/div[@id='taskListBlock']/div[3]/div[1]/div[2]/div[3]/div[1]/div[1]/div[2]";
+	String obj_Delete_Btn = "//body/div[@id='taskManagementPage']/div[@id='taskListBlock']/div[3]/div[4]/div[1]/div[3]/div[1]";
+	String obj_DeleteConfirm_Btn = "//span[@id='taskPanel_deleteConfirm_submitTitle']";
+			
 }
